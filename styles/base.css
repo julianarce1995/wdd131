@@ -124,10 +124,6 @@ a {
     flex: 2;
 }
 
-.overline:hover {
-     background-color: rgb(117, 113, 113);
-}
-
 .main {
     display: flex;
     flex: 1;
