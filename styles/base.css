@@ -124,6 +124,10 @@ a {
     flex: 2;
 }
 
+nav a:hover {
+	text-decoration: overline;
+}
+
 .main {
     display: flex;
     flex: 1;
