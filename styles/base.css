@@ -125,7 +125,7 @@ a {
 }
 
 .overline:hover {
-    text-decoration: overline;
+     background-color: rgb(117, 113, 113);
 }
 
 .main {
@@ -133,6 +133,7 @@ a {
     flex: 1;
     gap: 2rem;
     min-height: 100%;
+    max-width: 1920px;
 }
 
 .is-flex-column {
