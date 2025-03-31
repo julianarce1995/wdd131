@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Julian David Arce Araujo</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Julian David Arce Araujo - place page where you can find info about a place">
+    <meta name="author" content="Julian David Arce Araujo">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Winky+Sans:ital,wght@0,453;1,453&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="mb-1 p-1">Chongqing</h1>
+    </header>
+    <main class="">
+        <div class="grid-container">
+            <div class="image-container">
+                <img src="images/small.webp"
+                    srcset="images/small.webp 550w, 
+                            images/large.webp 1000w"
+                    sizes="(max-width: 550px) 100vw, 
+                           (max-width: 1000px) 50vw"
+                    alt="Chongqing, China">
+            </div>
+            <div class="data-content">
+                <h2>Data</h2>
+                <div class="table">
+                    <div class="labels">
+                        <label>Area:</label>
+                        <label>Population:</label>
+                        <label>Capital:</label>
+                        <label>Lenguages:</label>
+                        <label>Currency:</label>
+                        <label>Time Zone:</label>
+                        <label>Calling Code:</label>
+                        <label>Internet TDL:</label>
+                    </div>
+                    <div class="values">
+                        <span>575854 sq km</span>
+                        <span>23,888,456</span>
+                        <span>none</span>
+                        <span>Pǔtōnghuà</span>
+                        <span>Renminbi</span>
+                        <span>UTC+8</span>
+                        <span>+86</span>
+                        <span>.cn</span>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-content">
+                <h2 class="title-weather">Weather</h2>
+                <div class="table">
+                    <div class="labels">
+                        <label>Temperature:</label>
+                        <label>Conditions:</label>
+                        <label>Wind:</label>
+                        <label>Wind Chill:</label>
+                    </div>
+                    <div class="values">
+                        <span>10°C</span>
+                        <span>Partly Cloudy</span>
+                        <span>5 km/h</span>
+                        <span id="windChill"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© <span id="currentyear"></span> 🎈Julian David Arce Araujo 🎈Valle del Cauca-Colombia</p>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+</html>
