@@ -40,7 +40,7 @@
     }
     .title-weather::after {
         display: flex;
-        content: url('/images/sun_sunshine_icon.svg');
+        content: url('/images/temerature_icon.png');
         width: 40px;
         height: 40px;
     }
