@@ -26,12 +26,12 @@
     }
     .data-content h2,
     .weather-content img,
-    .title-weather::after {
+    svg {
         margin: 1.5rem;
     }
 
-    .title-weather::after {
-        content: url('/images/sun_sunshine_icon-1.svg');
+    svg {
+        display: flex;
     }
     .title-weather {
         display: flex;
