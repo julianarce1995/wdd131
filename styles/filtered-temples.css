@@ -132,6 +132,6 @@ section h3 {
     box-shadow: 5px 2px 20px rgb(127, 126, 126);
     border-radius: 1rem;
     margin: 0.5rem;
-    width: 180px;
-    height: 120px;
+    width: 200px;
+    height: auto;
 }
