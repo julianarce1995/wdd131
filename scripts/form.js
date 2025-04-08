@@ -32,17 +32,14 @@ products.forEach((product) => {
   const option = document.createElement("option");
   option.value = product.name;
   option.textContent = product.name;
+  option.id = product.id;
   selectElement.appendChild(option);
 });
 
-let count = localStorage.getItem("reviewCount");
+const currentyear = document.querySelector("#currentyear");
+const today = new Date();
+currentyear.textContent = `${today.getFullYear()}`;
 
-if (count === null) {
-  count = 1;
-} else {
-  count = parseInt(count) + 1;
-}
-
-localStorage.setItem("reviewCount", count);
-
-document.getElementById("review-count").textContent = count;
+const lastModified = document.querySelector("#lastModified");
+const nLastModif = document.lastModified;
+lastModified.innerHTML = `last modified: ${nLastModif.toLocaleString()}`;
