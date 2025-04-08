@@ -1,0 +1,11 @@
+@media (min-width: 37.5em) {
+	.form {
+        width: 30rem;
+    }
+}
+
+@media (min-width: 60.5em) {
+    .form {
+        width: 40rem;
+    }
+}

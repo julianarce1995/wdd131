@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - week 5 Form Activity</title>
+    <meta name="description" content="learning how to use a form">
+    <meta name="author" content="Julian David Arce Araujo">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="p-1">Form Activity</h1>
+    </header>
+    <main class="">
+        <p class="p-1">You have submitted <span id="review-count">0</span> reviews.</p>
+        <form action="review.html" method="get" class="form flex-column">
+            <div class="flex-column pt-1">
+                <label class="label" for="product">Product Name:</label>
+                <select id="product" name="product" required class="height-1 p-1">
+                  <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+            <div class="flex-column pt-1">
+                <span class="label">Overall Rating:</span>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>        
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>        
+                    <input type="radio" id="oneestar" name="stars" value="1" required><label for="oneestar"></label>        
+                </div>
+            </div>
+            
+            <div class="flex-column pt-1">
+                <label class="label" for="installation-date">Date of Installation:</label>
+                <input type="date" id="installation-date" name="installation-date" class="height-1 p-1" required>
+            </div>
+            
+            <fieldset class="pt-1">
+                <legend class="p-1">Useful Features:</legend>
+
+                <div>
+                    <input class="ml-1" type="checkbox" id="feature1" name="features" value="Easy to use">
+                    <label class="label p-1" for="feature1">Easy to use</label>
+                </div>
+
+                <div>
+                    <input class="ml-1" type="checkbox" id="feature2" name="features" value="Affordable">
+                    <label class="label p-1" for="feature2">Affordable</label>
+                </div>
+
+                <div>
+                    <input class="ml-1" type="checkbox" id="feature3" name="features" value="Eco-friendly">
+                    <label class="label p-1" for="feature3">Eco-friendly</label>
+                </div>
+
+                <div>
+                    <input class="ml-1" type="checkbox" id="feature4" name="features" value="Durable">
+                    <label class="label p-1" for="feature4">Durable</label>
+                </div>
+
+                <div>
+                    <input class="ml-1" type="checkbox" id="feature5" name="features" value="Compact">
+                    <label class="label p-1" for="feature5">Compact</label>
+                </div>
+            </fieldset>
+
+            <div class="flex-column pt-1">
+                <label class="label" for="written-review">Written Review:</label>
+                <textarea class="p-1" id="written-review" name="written-review" rows="5" cols="40" placeholder="Write your review here..."></textarea>
+            </div>
+
+            <div class="flex-column pt-1">
+                <label class="label" for="user-name">User Name:</label>
+                <input class="p-1" type="text" id="user-name" name="user-name" placeholder="Enter your name">
+            </div>
+
+            <div class="pt-1">
+                <input type="submit" value="Submit Review" class="p-1">
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>© <span id="currentyear"></span> 🎈Julian David Arce Araujo 🎈Valle del Cauca-Colombia</p>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+</html>
