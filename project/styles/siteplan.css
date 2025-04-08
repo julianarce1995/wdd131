@@ -1,0 +1,19 @@
+
+body {
+  font-family: "Winky Sans", sans-serif;
+  font-weight: 500;
+  background-color: #d9e9e0 !important;
+  color: #333;
+}
+h1, h2 {
+  font-family: "Exo 2", sans-serif;
+  color: #27742a;
+}
+.section {
+  margin-bottom: 30px;
+}
+
+.wireframe {
+  display: flex;
+  flex-direction: column;
+}
