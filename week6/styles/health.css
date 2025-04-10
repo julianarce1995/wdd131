@@ -1,5 +1,5 @@
 :root {
-    --primary-color:  #27742a;
+    --primary-color:  #215d23;
     --secondary-color: #d9e9e0;
     --white: #ffffff;
     --black: #1f1d1d;
@@ -75,7 +75,7 @@ header {
 }
 
 .navigation a:hover {
-	color: var(--black);
+	color: var(--secondary-color);
 }
 .navigation li a {
     font-size: 1.2rem;
@@ -165,6 +165,7 @@ input {
     cursor: pointer;
 }
 
+input,
 select,
 textarea::placeholder {
   font-size: 1.2rem; /* Cambia esto según lo que necesites */
@@ -172,10 +173,10 @@ textarea::placeholder {
 }
 
 .pretty-button {
-  background-color: #4CAF50; /* green */
-  color: white;
+  background-color: var(--primary-color); /* green */
+  color: var(--white);
   padding: 12px 24px;
-  font-size: 16px;
+  font-size: 1.2rem;
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -184,7 +185,8 @@ textarea::placeholder {
 }
 
 .pretty-button:hover {
-  background-color: #45a049;
+  background-color: var(--secondary-color);
+  color: var(--black);
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
