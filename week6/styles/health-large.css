@@ -1,0 +1,42 @@
+@media (min-width: 37.5em) {
+	#menu {
+		display: none;
+	}
+
+	.navigation, .navigation.show {
+        display: flex;
+		flex-direction: row;
+	}
+
+	.navigation li,
+    .navigation.show li {
+		display: flex;
+		flex: 1 1 100%;
+	}
+
+    .show {
+        display: flex;
+        position: static;
+    }
+
+    .recipe-card {
+        width: 30.5rem;
+        border-radius: 6px;
+    }
+    .form {
+        padding: 2rem 0;
+        width: 30rem;
+    }
+}
+
+@media (min-width: 60.5em) {
+    .recipe-card {
+        width: 40.5rem;
+        border-radius: 6px;
+    }
+
+    .form {
+        padding: 2rem 0;
+        width: 35rem;
+    }
+}
